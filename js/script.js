@@ -43,6 +43,11 @@ document.addEventListener('DOMContentLoaded', function() {
         contentArea.innerHTML = firstYearContent;
         // Ajouter une classe pour une transition en douceur (optionnel)
         contentArea.classList.add('content-loaded');
+        
+        // Mettre à jour l'état visuel des cartes
+        card1.classList.add('selected');
+        card2.classList.remove('selected');
+        card3.classList.remove('selected');
     }
 
     // Gestionnaire de clic pour la carte 1
